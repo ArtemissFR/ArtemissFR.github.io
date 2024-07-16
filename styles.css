@@ -1,0 +1,208 @@
+/* Fonts Part >>> */
+@font-face {
+    font-family: 'Astro';
+    src: url('fonts/Astronomus.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Square';
+    src: url('fonts/Square\ Space.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lexend';
+    src: url('fonts/Lexend.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* <<< Fonts Part */
+
+/* Body Part >>> */
+body {
+    font-family: 'Lexend', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c;
+    color: #fff;
+}
+/* <<< Body Part*/
+
+/* Header Part >>> */
+header img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/* <<< Header Part */
+
+/* Nav Part >>> */
+nav {
+    background-color: #2b2b2b;
+    padding: 1em 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #00ff00;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #00ff00;
+    color: #2b2b2b;
+    border-radius: 4px;
+}
+/* <<< Nav Part */
+
+/* Main Part >>> */
+main {
+    padding: 2em;
+}
+/* <<< Main Part */
+
+/* Article Part >>> */
+article, section {
+    background-color: #333;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 2em;
+}
+
+article:hover, section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.9);
+}
+
+article h1, section h1 {
+    font-family: 'Astro', sans-serif;
+    color: #ffffff;
+    margin-top: 0;
+}
+
+article h2, section h2 {
+    font-family: 'Square', sans-serif;
+    color: #00ff00;
+    margin-top: 0;
+}
+/* <<< Article Part */
+
+/* Footer Part >>> */
+footer {
+    background-color: #2b2b2b;
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5);
+}
+/* <<< Footer Part */
+
+/* Social_Links Part >>> */
+.social-links a {
+    color: #00ff00;
+    text-decoration: none;
+    margin: 0 1em;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #fff;
+}
+/* <<< Social_Links Part */
+
+header img {
+    /* Remplacer par le chemin de ton image de bannière */
+    content: url('image/artemissupdates_main_banner.png');
+}
+
+
+/* Ajout des styles pour le filtrage */
+.filter {
+    margin-bottom: 20px;
+}
+
+.filter label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.filter select {
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+}
+
+.tool {
+    background-color: #444;
+    padding: 1em;
+    border-radius: 8px;
+    margin-bottom: 1em;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tool:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.9);
+}
+
+.tool h3 {
+    color: #00ff00;
+    margin-top: 0;
+}
+
+/* Panel Part >>> */
+#panels {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.panel {
+    border: 3px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel a {
+    font-family: 'Astro', sans-serif;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-decoration: none;
+    transition: font-size 0.3s;
+}
+
+.panel a:hover {
+    color: #00ff00;
+    font-size: 30px;
+}
+/* <<< Panel Part */

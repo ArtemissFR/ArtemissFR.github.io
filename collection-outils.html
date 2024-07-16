@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtemissUpdates - Collection D'outils</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="icon" href="icon/artemissupdates_icon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="banner.jpg" alt="Bannière du site">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil <i class="fas fa-home"></i></a></li>
+            <li><a href="projets.html">Projets <i class="fas fa-archive"></i></a></li>
+            <li><a href="collection-outils.html">Collection D'outils <i class="fas fa-user-secret"></i></a></li>
+            <li><a href="https://github.com/ArtemissFR">GitHub <i class="fab fa-github"></i></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="collection-outils">
+            <h1>Collection D'outils</h1>
+            <div class="filter">
+                <label for="categories"><i class="fas fa-filter"></i> Filtrer par catégorie :</label>
+                <select id="categories" onchange="filterTools()">
+                    <option value="all">Toutes</option>
+                    <option value="tool_compilation">Compilation D'outils</option>
+                    <option value="blue_teaming">Blue Teaming</option>
+                    <option value="red_teaming">Red Teaming</option>
+                    <option value="forensic">Forensic</option>
+                    <option value="scanning">Scanning</option>
+                    <option value="intrusion">Intrusion</option>
+                </select>
+            </div>
+            <div id="tools">
+
+                <!-- -------- TOOL -> MALTEGO -------- -->
+                <div class="tool" data-category="forensic">
+                    <h2>MALTEGO</h2>
+                    <section id="panels">
+                        <div class="panel">
+                            <img src="image/tools/maltego_logo.png" height="100%" width="100%" alt="Maltego_Logo">
+                        </div>
+                        <div class="panel">
+                            <p>Maltego est un outil puissant de collecte et d'analyse de données utilisé principalement dans les domaines de la cybersécurité, de la criminalistique numérique et 
+                                de la recherche en source ouverte (OSINT). Il permet aux utilisateurs de visualiser les relations entre différentes données comme les adresses e-mail, les domaines, 
+                                les comptes de réseaux sociaux, les adresses IP, et bien plus encore, sous forme de graphiques interactifs.</p>
+                        </div>
+                        <div class="panel">
+                            <a href="https://www.maltego.com/" target="_blank">Accéder au site officiel <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </section>
+                    <nav>
+                        <ul>
+                            <li><a href="#" data-filter="forensic">Forensic <i class="fas fa-search"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- -------- TOOL -> MALTEGO -------- -->
+
+                <!-- -------- TOOL -> AWESOME_CYBERSECURITY_BLUETEAM -------- -->
+                <div class="tool" data-category="tool_compilation blue_teaming">
+                    <h2>Awesome Cybersecurity BlueTeam</h2>
+                    <section id="panels">
+                        <div class="panel">
+                            <img src="image/tools/cybersecurity.png" height="60%" width="100%" alt="BlueTeamCybersecurity_Logo">
+                        </div>
+                        <div class="panel">
+                            <p>Les équipes bleues de cybersécurité sont des groupes d'individus qui identifient les failles de sécurité dans les systèmes informatiques, vérifient l'efficacité des mesures de sécurité et surveillent les systèmes pour garantir que les mesures défensives mises en œuvre restent efficaces à l'avenir. Bien qu'elle ne soit pas exclusive, cette liste est fortement biaisée en faveur des projets de logiciels libres et à l'encontre des produits propriétaires ou des services d'entreprise.</p>
+                        </div>
+                        <div class="panel">
+                            <a href="https://github.com/fabacab/awesome-cybersecurity-blueteam" target="_blank">Accéder au site officiel <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </section>
+                    <nav>
+                        <ul>
+                            <li><a href="#" data-filter="tool_compilation">Compilation D'outils <i class="fas fa-box"></i></a></li>
+                            <li><a href="#" data-filter="blue_teaming">Blue Teaming <i class="fas fa-shield-alt"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- -------- TOOL -> AWESOME_CYBERSECURITY_BLUETEAM -------- -->
+
+                <!-- -------- TOOL -> ARMITAGE -------- -->
+                <div class="tool" data-category="red_teaming hacking">
+                    <h2>Armitage</h2>
+                    <section id="panels">
+                        <div class="panel">
+                            <img src="image/tools/armitage_logo.png" height="100%" width="100%" alt="Armitage_Logo">
+                        </div>
+                        <div class="panel">
+                            <p>Armitage est un outil de collaboration scriptable de l'équipe rouge pour Metasploit qui visualise les cibles, recommande des exploits et expose les fonctionnalités avancées de post-exploitation dans le framework.</p>
+                        </div>
+                        <div class="panel">
+                            <a href="https://www.kali.org/tools/armitage/" target="_blank">Accéder au site officiel <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </section>
+                    <nav>
+                        <ul>
+                            <li><a href="#" data-filter="hacking">Hacking <i class="fas fa-crosshairs"></i></a></li>
+                            <li><a href="#" data-filter="red_teaming">Red Teaming <i class="fas fa-mask"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- -------- TOOL -> ARMITAGE -------- -->
+
+                <!-- -------- TOOL -> METASPLOIT -------- -->
+                <div class="tool" data-category="red_teaming hacking blue_teaming">
+                    <h2>Metasploit</h2>
+                    <section id="panels">
+                        <div class="panel">
+                            <img src="image/tools/metasploit_logo.png" height="100%" width="100%" alt="Armitage_Logo">
+                        </div>
+                        <div class="panel">
+                            <p>La connaissance est un pouvoir, surtout lorsqu’elle est partagée. Fruit d'une collaboration entre la communauté open source et Rapid7, Metasploit aide les équipes de sécurité à faire plus que simplement vérifier les vulnérabilités, gérer les évaluations de sécurité et améliorer la sensibilisation à la sécurité ; il permet et arme les défenseurs pour qu’ils gardent toujours une (ou deux) longueur d’avance sur le match.</p>
+                        </div>
+                        <div class="panel">
+                            <a href="https://www.metasploit.com/" target="_blank">Accéder au site officiel <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </section>
+                    <nav>
+                        <ul>
+                            <li><a href="#" data-filter="red_teaming">Red Teaming <i class="fas fa-box"></i></a></li>
+                            <li><a href="#" data-filter="blue_teaming">Blue Teaming <i class="fas fa-shield-alt"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- -------- TOOL -> METASPLOIT -------- -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/louis-provost-a7506a22a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/ArtemissFR" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        function filterTools() {
+            const category = document.getElementById('categories').value;
+            const tools = document.querySelectorAll('.tool');
+
+            tools.forEach(tool => {
+                const categories = tool.getAttribute('data-category').split(' ');
+
+                if (category === 'all' || categories.includes(category)) {
+                    tool.style.display = 'block';
+                } else {
+                    tool.style.display = 'none';
+                }
+            });
+        }
+
+// --------- SCRIPT POUR APPLIQUER FILTRE AVEC BOUTON EN BAS PANEL ---------
+        // Gestionnaire d'événement pour filtrer en cliquant sur le texte "Forensic"
+        document.querySelector('a[data-filter="forensic"]').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('categories').value = 'forensic';
+            filterTools();
+        });
+
+        // Gestionnaire d'événement pour filtrer en cliquant sur le texte "Compilation d'outils"
+        document.querySelector('a[data-filter="tool_compilation"]').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('categories').value = 'tool_compilation';
+            filterTools();
+        });
+
+        // Gestionnaire d'événement pour filtrer en cliquant sur le texte "Blue Teaming"
+        document.querySelector('a[data-filter="blue_teaming"]').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('categories').value = 'blue_teaming';
+            filterTools();
+        });
+
+        // Gestionnaire d'événement pour filtrer en cliquant sur le texte "Red Teaming"
+        document.querySelector('a[data-filter="red_teaming"]').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('categories').value = 'red_teaming';
+            filterTools();
+        });
+// --------- SCRIPT POUR APPLIQUER FILTRE AVEC BOUTON EN BAS PANEL ---------
+    </script>
+</body>
+</html>
